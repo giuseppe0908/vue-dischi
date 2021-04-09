@@ -5,14 +5,18 @@
   box-sizing:border-box;
 }
 
-/* #lista{
-  /* text-align: center;
+ #lista{
+  margin-bottom: 20px;
   border: 1px solid black;
-  display: flex;
-  justify-content: center;
-} */
+
+}
 .titolo{
   text-align: center;
+  margin: 10px;
+}
+.titolo h1{
+  padding-top: 19px;
+  margin-bottom: 10px;
 }
 .container{
   width: 90%;
@@ -20,16 +24,18 @@
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  height: auto;
   perspective: 1000px;
-  padding-top: 10px;
-  width: calc(90%/4 - 20px);
-  margin: 0px 10px;
+  padding-top: 20px;
+  width: calc(100%/4 - 40px);
+  justify-content: space-between;
+  margin: 0px 20px;
 }
 
 .card-inner {
@@ -50,15 +56,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .card-cover {
-  background-color: #bbb;
   color: black;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .card-info {
@@ -70,18 +75,6 @@
   justify-content: center;
 }
 
-.card-info .title{
-  margin-left: -61px;
-  font-size: 20px;
-}
-
-.card-info .years{
-  margin-top: -24px;
-  margin-left: 133px;
-  margin-bottom: 12px;
-  font-size: 20px;
-}
-
-.card-info .author, .genre{
+.card-info .title, .years, .genre, .author{
   font-size: 22px;
 }
