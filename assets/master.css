@@ -4,19 +4,29 @@
   border: 0;
   box-sizing:border-box;
 }
+body{
+  background-color: #ECE0DA;
+}
 
  #lista{
-  margin-bottom: 20px;
-  border: 1px solid black;
-
+   margin-bottom: 20px;
+   border: 1px solid black;
+   position: absolute;
+   top: 64px;
+   left: 513px;
+   width: 50px;
+   color: red;
 }
 .titolo{
-  text-align: center;
   margin: 10px;
+  margin-left: 76px;
+  margin-bottom: 44px;
 }
 .titolo h1{
   padding-top: 19px;
   margin-bottom: 10px;
+  font-size: 60px;
+  color: #FF1D23;
 }
 .container{
   width: 90%;
@@ -30,7 +40,7 @@
 .card {
   background-color: transparent;
   /* width: 300px; */
-  height: auto;
+  height: 250px;
   perspective: 1000px;
   padding-top: 20px;
   width: calc(100%/4 - 40px);
@@ -67,8 +77,8 @@
 }
 
 .card-info {
-  background-color: #2980b9;
-  color: white;
+  background-color: red;
+  color: #ECE0DA;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
