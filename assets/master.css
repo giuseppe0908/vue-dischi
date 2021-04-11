@@ -88,3 +88,60 @@ body{
 .card-info .title, .years, .genre, .author{
   font-size: 22px;
 }
+
+
+@media screen and ( max-width: 950px){
+  .titolo{
+    margin-left: 61px;
+  }
+  .card{
+    width: calc(100%/3 - 40px);
+  }
+}
+
+@media screen and ( max-width: 768px){
+  .titolo{
+    margin-left: 48px;
+  }
+  .titolo h1{
+    font-size: 45px;
+  }
+  #lista{
+    top: 51px;
+    left: 396px;
+  }
+
+  .card{
+    width: calc(100%/2 - 40px);
+  }
+}
+
+@media screen and ( max-width: 500px){
+  .titolo{
+    margin-left: 43px;
+  }
+  .titolo h1{
+    font-size: 40px;
+  }
+
+  #lista{
+    top: 47px;
+    left: 349px;
+  }
+
+  .card{
+    width: calc(100%/1 - 40px);
+  }
+}
+
+@media screen and ( max-width: 408px){
+
+  .titolo h1{
+    font-size: 30px;
+  }
+
+  #lista{
+    top: 39px;
+    left: 264px;
+  }
+}
