@@ -19,8 +19,11 @@ body{
 }
 .titolo{
   margin: 10px;
-  margin-left: 76px;
+
   margin-bottom: 44px;
+}
+.mg-left{
+  margin-left: 76px;
 }
 .titolo h1{
   padding-top: 19px;
@@ -90,8 +93,9 @@ body{
 }
 
 
+
 @media screen and ( max-width: 950px){
-  .titolo{
+  .mg-left{
     margin-left: 61px;
   }
   .card{
@@ -100,7 +104,7 @@ body{
 }
 
 @media screen and ( max-width: 768px){
-  .titolo{
+  .mg-left{
     margin-left: 48px;
   }
   .titolo h1{
@@ -117,7 +121,7 @@ body{
 }
 
 @media screen and ( max-width: 500px){
-  .titolo{
+  .mg-left{
     margin-left: 43px;
   }
   .titolo h1{

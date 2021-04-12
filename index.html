@@ -4,25 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dischi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/master.css">
   </head>
   <body>
     <div id="root">
 
-      <div class="titolo">
+      <div class="titolo mg-left">
         <h1>Ecco i tuoi brani </h1>
         <select id="lista" v-model="genere" >
     		  <option value="">All</option>
-    		  <option value="Rock">Rock</option>
-    		  <option value="Pop">Pop</option>
+    		  <option v-for="genere in genereoption" :value="genere">{{genere}}</option>
+    		  <!-- <option value="Pop">Pop</option>
     		  <option value="Jazz">Jazz</option>
-          <option value="Metal">Metal</option>
+          <option value="Metal">Metal</option> -->
     	  </select>
       </div>
+      <button class="mg-left" @click="ordinamento" name="button"> Ordina per anno
+      <i class="fas" :class="(flag) ? 'fa-arrow-down' : 'fa-arrow-up' "></i>
+      </button>
 
       <div class="container">
 
-        <div class="card" v-for="(disk,i) in disks"  v-if="(genere == disk.genre) ? true : genere == '' ">
+        <div class="card" v-for="(disk,i) in disks"  v-if="genere == disk.genre || genere == '' ">
         <div class="card-inner">
           <div class="card-cover"
                 :style="`background-image: url('${disk.poster}');`">
